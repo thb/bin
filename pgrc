@@ -1,0 +1,4 @@
+#!/bin/sh
+
+pg_restore --clean --if-exists --no-owner --no-privileges --dbname ARGV[0] ARGV[1]
+

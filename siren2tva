@@ -1,0 +1,10 @@
+#!/usr/bin/ruby
+# frozen_string_literal: true
+
+# prendre les 9 premiers chiffres, exception si plus ou moins que 9 chiffres
+SIREN = ARGV[0]
+# calculer la clé
+key = (12 + 3 * (SIREN.to_i % 97)) % 97
+# concaténer et prévixer de "FR" pour la france
+tva = "FR#{key}#{SIREN}"
+puts tva
