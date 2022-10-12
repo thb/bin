@@ -2,7 +2,7 @@
 
 ZK_PATH='/Users/thomasblumenfeld/MEGAsync/self_notes'
 
-cd $SK_PATH
+cd $ZK_PATH
 
 CHANGES_EXIST="$(git status --porcelain | wc -l)"
 
